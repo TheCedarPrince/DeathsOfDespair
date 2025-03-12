@@ -1,0 +1,10 @@
+name = "DeathsOfDespair"
+authors = ["Samuel Lowe", "Jacob S. Zelko"]
+
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DrWatson = "634d3b9d-ee7a-5ddf-bec9-22491ea816e1"
+
+[compat]
+DrWatson = "2.18.0"
+julia = "1.10.5"
