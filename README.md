@@ -28,3 +28,7 @@ using DrWatson
 @quickactivate "DeathsOfDespair"
 ```
 which auto-activate the project and enable local path handling from DrWatson.
+
+## Data Sets
+
+Data sets were sourced from IPUMS [USA](https://usa.ipums.org/usa/) and [CPS](https://cps.ipums.org/cps/index.shtml). Data privacy agreements prevent us from sharing these data sets.
