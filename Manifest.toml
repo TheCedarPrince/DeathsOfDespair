@@ -2,7 +2,7 @@
 
 julia_version = "1.11.4"
 manifest_format = "2.0"
-project_hash = "5632be01af1eb890a2745c91c511ec3a8a7e15c7"
+project_hash = "6345277f03be029ece294ccb3717ab4661ba8c4f"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "e2478490447631aedba0823d4d7a80b2cc8cdb32"
@@ -1908,6 +1908,12 @@ git-tree-sha1 = "77b3d3605fc1cd0b42d95eba87dfcd2bf67d5ff6"
 uuid = "647866c9-e3ac-4575-94e7-e3d426903924"
 version = "0.1.2"
 
+[[deps.Polylabel]]
+deps = ["DataStructures", "GeoInterface", "GeometryOps"]
+git-tree-sha1 = "8e18d4069944f516e42a8e1b53137bcfea2921f7"
+uuid = "49a44318-e865-4b63-9842-695152d634c1"
+version = "0.2.0"
+
 [[deps.PooledArrays]]
 deps = ["DataAPI", "Future"]
 git-tree-sha1 = "36d8b4b899628fb92c2749eb488d884a926614d3"
@@ -2125,14 +2131,11 @@ deps = ["DBFTables", "Extents", "GeoFormatTypes", "GeoInterface", "GeoInterfaceM
 git-tree-sha1 = "a641a9620394bf0ac1514c97bbae20e2fe1671b3"
 uuid = "8e980c4a-a4fe-5da2-b3a7-4b4b0353a2f4"
 version = "0.13.2"
+weakdeps = ["Makie", "ZipFile"]
 
     [deps.Shapefile.extensions]
     ShapefileMakieExt = "Makie"
     ShapefileZipFileExt = "ZipFile"
-
-    [deps.Shapefile.weakdeps]
-    Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
-    ZipFile = "a5390f91-8eb1-5f08-bee0-b1d1ffed6cea"
 
 [[deps.SharedArrays]]
 deps = ["Distributed", "Mmap", "Random", "Serialization"]
@@ -2569,6 +2572,12 @@ deps = ["Artifacts", "JLLWrappers", "Libdl"]
 git-tree-sha1 = "6dba04dbfb72ae3ebe5418ba33d087ba8aa8cb00"
 uuid = "c5fb5394-a638-5e4d-96e5-b29de1b5cf10"
 version = "1.5.1+0"
+
+[[deps.ZipFile]]
+deps = ["Libdl", "Printf", "Zlib_jll"]
+git-tree-sha1 = "f492b7fe1698e623024e873244f10d89c95c340a"
+uuid = "a5390f91-8eb1-5f08-bee0-b1d1ffed6cea"
+version = "0.10.1"
 
 [[deps.Zlib_jll]]
 deps = ["Libdl"]
