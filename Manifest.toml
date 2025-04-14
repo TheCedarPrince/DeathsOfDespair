@@ -1042,7 +1042,7 @@ version = "76.2.0+0"
 
 [[deps.IPUMS]]
 deps = ["DataFrames", "Downloads", "EzXML", "HTTP", "JSON3", "OpenAPI"]
-git-tree-sha1 = "4caaaf0e0e3e218e8f5e4c5a95ceeab5bbfe15ed"
+git-tree-sha1 = "4237eb8267e3361bf661b0555d5ee4a5f0b3ada9"
 repo-rev = "main"
 repo-url = "https://github.com/JuliaHealth/IPUMS.jl"
 uuid = "51d1f77e-d457-4c14-a89d-9ed71839f38d"
