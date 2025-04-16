@@ -19,7 +19,6 @@ graphicx
 \newcommand{\C}{\ensuremath{\mathbb{C}}}
 \newcommand{\F}{\ensuremath{\mathbb{F}}}
 
-
 %Information to be included in the title page:
 \title{Deaths of Despair: An Analysis of Mortality in the American Rust Belt}
 \author{Samuel Lowe, Jacob Zelko}
@@ -50,7 +49,7 @@ graphicx
 
 
 \begin{frame}
-    \frametitle{Data Sets}
+    \frametitle{Data Sets: Training Variables}
 
     \begin{columns}[T]
         \column{0.33\textwidth}
@@ -58,7 +57,7 @@ graphicx
 
         \begin{itemize}
             \item Census conducted once every 10 years, most recently in 2020
-            \item
+            \item Surveys every household in the United States on socioeconomic and demographic questions
         \end{itemize}
 
         \column{0.33\textwidth}
@@ -84,13 +83,66 @@ graphicx
 
 \begin{frame}
 
+    \frametitle{Challenges: Data Cleaning}
+
+    \begin{itemize}
+        \item Difficult to make apples to apples comparisons between different data sets
+        \item Even if apples to apples comparisons are possible, it's a lot of work just to clean and prepare data
+        \item Limitation: A lot of ARDA data and IPUMS CPS data was missing in many columns, and sociological data from many surveys is only available in some areas and/or in some years
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+    \frametitle{Data Sets: Target Varibles}
+
+    \uline{}
+
+    \begin{itemize}
+        \item
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
     \frametitle{Feature Selection: Lasso Regression}
+
+    \begin{itemize}
+        \item Idea: a lot of features might not be relevant for predicting certain variables
+        \item Singular value decomposition is great (see below) but it can be very difficult to interpret the resulting features
+        \item Because interpretation is necessary both for sociological research and crafting policy, we started with Lasso to select features
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+    \frametitle{Feature Selection: Results from Lasso}
+    \begin{itemize}
+        \item
+    \end{itemize}
 
 \end{frame}
 
 \begin{frame}
 
     \frametitle{Feature Selection: Singular Value Decomposition}
+    \begin{itemize}
+        \item Even though SVD models are harder to interpret, they may be substantially more accurate
+        \item This helps in targeting which states are most likely to have mortality from certain causes, which can help respond to public health crises in the short term
+        \item More interpretable work is needed to establish preventable measures and reduce mortality in the long term
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+    \frametitle{Feature Selection: Results from SVD}
+    \begin{itemize}
+        \item
+    \end{itemize}
 
 \end{frame}
 
