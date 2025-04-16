@@ -21,7 +21,7 @@ graphicx
 
 %Information to be included in the title page:
 \title{Deaths of Despair: An Analysis of Mortality in the American Rust Belt}
-\author{Samuel Lowe, Jacob Zelko}
+\author{Samuel Lowe, Jacob S. Zelko}
 \institute{Northeastern University}
 \date{April 16, 2025}
 
@@ -100,7 +100,11 @@ graphicx
     \uline{}
 
     \begin{itemize}
-        \item
+      \item Congregrations across US
+      \item Separation of rust belt states from rest of US
+      \item Income and tax data
+      \item Alcohol abuse prevalence rates across US
+      \item 
     \end{itemize}
 
 \end{frame}
@@ -121,40 +125,34 @@ graphicx
 
     \frametitle{Feature Selection: Results from Lasso}
     \begin{itemize}
-        \item
+      \item $\alpha = 1$, $\lambda = 100$
+      \item Wasn't terribly effective with finding out best parameters to use
+      \item May need to experiment further with hyperparameters
     \end{itemize}
 
 \end{frame}
 
+
 \begin{frame}
 
-    \frametitle{Feature Selection: Singular Value Decomposition}
+  \frametitle{Results and Discussion}
     \begin{itemize}
-        \item Even though SVD models are harder to interpret, they may be substantially more accurate
-        \item This helps in targeting which states are most likely to have mortality from certain causes, which can help respond to public health crises in the short term
-        \item More interpretable work is needed to establish preventable measures and reduce mortality in the long term
+      \item Linear regression: 33.4% MSE
+      \item Ridge Regression: 27.8% MSE
+      \item Prevalence was always being overestimated for rust belt states
     \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-
-    \frametitle{Feature Selection: Results from SVD}
-    \begin{itemize}
-        \item
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-
-    \frametitle{}
 
 \end{frame}
 
 \begin{frame}
 
     \frametitle{Future Work}
+    \begin{itemize}
+      \item Experiment further with hyperparameter adjustments
+      \item Incorporate other exploratory data analysis
+      \item Add in additional data to experiment with over years
+    \end{itemize}
+
 
 \end{frame}
 
